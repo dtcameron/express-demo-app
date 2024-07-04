@@ -6,8 +6,10 @@ This project uses the Prisma schemas as the source of truth, and then autogenera
 
 ## Setup
 
-`db:migrate` Use this to generate the Zod schemas and migrations from the prisma schema
-`db:push` Use this to push the created migrations to the database
+1. `npm install` Use this to install dependencies
+1. Set up your env file, you can get started with the `.env.example` provided
+1. `db:migrate` Use this to generate the Zod schemas and migrations from the prisma schema
+1. `db:push` Use this to push the created migrations to the database
 
 ## Scripts
 
