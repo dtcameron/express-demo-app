@@ -1,0 +1,10 @@
+node_modules/
+dist/
+*.env*
+!.env.example
+!migrations/
+prisma/generated/
+coverage/
+*.db
+*.db-journal
+migration_lock.toml

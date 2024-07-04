@@ -1,0 +1,21 @@
+generator client {
+    provider = "prisma-client-js"
+}
+
+generator zod {
+    provider = "zod-prisma-types"
+    useMultipleFiles = true
+}
+
+datasource db {
+    provider = "sqlite"
+    url = env("DB_URL")
+}
+
+model User {
+    id String @id @default(uuid()) 
+    name String
+    /// @zod.string({ description: "email_validation" }).email()
+    email String @unique
+    createdAt DateTime @default(now())
+}
